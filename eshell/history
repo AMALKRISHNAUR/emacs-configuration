@@ -1,0 +1,8 @@
+ls
+./a.out 
+./a.out 
+./a.out 
+clear
+clear
+pip install numpy
+pip install matplotlib

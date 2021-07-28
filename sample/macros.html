@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title></title>
+<meta name="author" content="(Amal)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css"/>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/sky.css" id="theme"/>
+
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'https://cdn.jsdelivr.net/npm/reveal.js/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h2 class="author">Amal</h2><p class="date">Created: 2021-07-19 Mon 21:10</p>
+</section>
+<section>
+<section id="slide-org363f926">
+<h2 id="org363f926">Macros</h2>
+<ul>
+<li>keyboard macros</li>
+<li>repl.it is an online ide</li>
+<li>keyboard recording pey back system</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgf29a812">
+<h2 id="orgf29a812">how to use</h2>
+<ul>
+<li>f3 and ctr x ( do the starting of macro</li>
+<li>ctr x ) or f4 do close the macro</li>
+<li>use ctr +x +  e or f4 to repete that</li>
+
+</ul>
+</section>
+<section id="slide-org9d23fdb">
+<h3 id="org9d23fdb">example</h3>
+<div class="outline-text-3" id="text-org9d23fdb">
+</div>
+</section>
+<section id="slide-orgeb220a1">
+<h4 id="orgeb220a1">creating a macro of helloworld keyboard keys</h4>
+<ul>
+<li>hello world</li>
+
+</ul>
+<p>
+hello worldhello worldhello world hello world, hello world, hello
+world, hello world, hello world, hello world, hello world, hello
+world,
+</p>
+
+</section>
+</section>
+<section>
+<section id="slide-orgdb09a53">
+<h2 id="orgdb09a53">saving last keyboard macro with a name</h2>
+<ul>
+<li>use Meta + x + name-last-kbd-macro</li>
+<li>then type name</li>
+<li>to insert you can use insert-kbd-macro command</li>
+<li>if you want to bind to a key</li>
+<li>you can use (global-set key (kbd "key") 'name-of-macro)</li>
+<li>key here is anything like c-c a &#x2013;&gt; ctr + c + a that its mean</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgfdf77ce">
+<h2 id="orgfdf77ce">creating a macro counter</h2>
+<ul>
+<li>type f3 and begin macro and type then type f3 again to set counter then do
+the typing then type f4 to create macro</li>
+
+</ul>
+</section>
+<section id="slide-org5c11863">
+<h3 id="org5c11863">example</h3>
+<p>
+&lt;ol&gt;
+&lt;li&gt;item 0&lt;/li&gt;
+&lt;li&gt;item 1&lt;/li&gt;
+&lt;li&gt;item 2&lt;/li&gt;
+&lt;li&gt;item 3&lt;/li&gt;
+&lt;li&gt;item 4&lt;/li&gt;
+&lt;/ol&gt;
+</p>
+
+<p>
+(fset 'list-rep [tab ?&lt; ?l ?i ?&gt; ?i ?t ?e ?m ?  f3 ?&lt; ?l ?i ?s
+   backspace backspace backspace ?/ ?l ?i ?&gt; return])
+</p>
+</section>
+</section>
+<section>
+<section id="slide-orge565b74">
+<h2 id="orge565b74">org convert table</h2>
+<ul>
+<li>this is a command</li>
+<li>it convert commseperated to table</li>
+<li>before doing this you need to select the area to be convert into table</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-orgb6b1153">
+<h2 id="orgb6b1153">kill rectangle</h2>
+<ul>
+<li>select table colum</li>
+<li>select the column fist elemnt and select all upto the l;ast element in that 
+column and use kill-rectangle command</li>
+<li>then use paste command ctr + x + r + y</li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+
+
+</script>
+</body>
+</html>

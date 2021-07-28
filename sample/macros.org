@@ -1,0 +1,103 @@
+#+OPTIONS: toc:nil num:nil
+#+REVEAL_THEME: sky
+* Macros
+ - keyboard macros
+ - repl.it is an online ide
+ - keyboard recording pey back system
+* how to use
+ - f3 and ctr x ( do the starting of macro
+ - ctr x ) or f4 do close the macro
+ - use ctr +x +  e or f4 to repete that 
+** example 
+*** creating a macro of helloworld keyboard keys
+    - hello world
+hello worldhello worldhello world hello world, hello world, hello
+world, hello world, hello world, hello world, hello world, hello
+world,
+
+* saving last keyboard macro with a name
+ - use Meta + x + name-last-kbd-macro 
+ - then type name
+ - to insert you can use insert-kbd-macro command
+ - if you want to bind to a key
+ - you can use (global-set key (kbd "key") 'name-of-macro)
+ - key here is anything like c-c a --> ctr + c + a that its mean
+* creating a macro counter
+ - type f3 and begin macro and type then type f3 again to set counter then do
+   the typing then type f4 to create macro
+** example
+   <ol>
+   <li>item 0</li>
+   <li>item 1</li>
+   <li>item 2</li>
+   <li>item 3</li>
+   <li>item 4</li>
+   </ol>
+
+   (fset 'list-rep [tab ?< ?l ?i ?> ?i ?t ?e ?m ?  f3 ?< ?l ?i ?s
+      backspace backspace backspace ?/ ?l ?i ?> return])
+* org convert table
+ - this is a command
+ - it convert commseperated to table
+ - before doing this you need to select the area to be convert into table
+* kill rectangle
+ - select table colum 
+ - select the column fist elemnt and select all upto the l;ast element in that 
+   column and use kill-rectangle command
+ - then use paste command ctr + x + r + y
+* undo tree
+ - type ctr + x + u for undoo tree visualizer
+ - then you get a undo line naviaget undo line with up ang down
+ - type d for visual change like git changes
+ - type d to close diff
+ - it like git it create branches 
+** example 
+  - let you undo several time and add new stuff then it create new
+    undo line at that point where you started adding new stuff so you
+    can get into both brach by using the movement command
+* Iedit
+** changing variable name
+   - This is used to edit bulk variables
+   - let you create a variable name in any language but you need to
+     change althis name to another name then you can use iedit 
+   - first select the word the type ctr + ; 
+   - now you can edit the variable that is in every where at same time
+   - this edit all of them 
+** narrowing
+  - use can use this to select perticuler line and edit them without
+    changing this
+  - this create a new buffer some sort of you only see your selected line and 
+    you can only edit these at that time so you can use change name previously 
+    explaned that only effect these line.
+  - To do this first select area then type command narrow-to-region or
+    ctr + x n n
+  - to get back type widen command or ctr + x n w
+** using some ones code
+  - you can narrow with ctr + x n to go back to widen type thse ag
+* If statement
+ - like if else in python
+ - i elisp
+ -    (if (= 2 3)
+       (message-box "it's true")
+     (message-box "it's false"))
+* Web mode
+ - you can use taging by c - c - c - e - w then type tag name like h1
+   it convert the selected text into h1
+ - Also you can use c - c f to fold
+ - alt + ; this commend the selected text
+* Tramp
+ - used to communiacte to server and edit them 
+   you may use this for future
+* Rectanguler edit
+ - edit selected and type c c r y to past 
+* spacebar
+ - used to have the folder and content like in ides
+ - m - . for going to the function where defined
+* projectile
+ - this is a package to help switch between projects
+ - type ctr c p to do the function the help will give to you by which
+   key if you note installed install it it is very useful package
+ - ctr c p s for search in files it is like grep
+
+* Emmet
+ - to use emmet type emmet symol then type ctr + enter

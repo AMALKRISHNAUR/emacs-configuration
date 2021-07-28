@@ -1,0 +1,4 @@
+c c c x 0 ---> start timer
+c c c x . ----> print timer
+c c c x , ---> puase
+c u c c c x , ---> stope timer
